@@ -1,3 +1,4 @@
+# It's a tkinter canvas that can be used to draw on and then return the drawn image
 import tkinter as tk
 from PIL import Image, ImageTk
 import numpy as np
@@ -6,6 +7,13 @@ from PIL import ImageGrab
 
 class ImageCanvas(tk.Canvas):
     def __init__(self, root, is_draw) -> None:
+        """
+        The function __init__ is a constructor that initializes the class Canvas
+        
+        Args:
+            root: The root window.
+            is_draw: This is a boolean value that determines whether the user is drawing a rectangle or not.
+        """
         super().__init__(root, height=300, width=300, background="black")
         self.pack(fill=tk.BOTH, side=tk.LEFT, expand=tk.YES)
         self.root = root

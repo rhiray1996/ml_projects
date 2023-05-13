@@ -14,6 +14,9 @@ with open("scripts/chat_bots/input/intents.json") as file:
     data = json.load(file)
 
 
+    """
+    A function that does nothing.
+    """
 def chat():
     # load trained model
     model = keras.models.load_model('scripts/chat_bots/input/chat_model')
